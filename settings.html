@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Setări WiFi
+		</title>
+		<meta charset='utf-8'/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style>
+			body{
+				font-family:helvetica;
+			}
+			a{
+				text-decoration:none;
+			}
+			.back{
+				font-size:30px;
+				color:black;
+				text-decoration:none;
+				width:30vw;
+				background-color:red;
+				height:40px;
+				line-height:40px;
+				border-radius:6px;
+			}
+			.bt{
+				font-size:28px;
+				color:black;
+				text-decoration:none;
+				width:30vw;
+				background-color:#cc0099;
+				height:40px;
+				line-height:40px;
+				border-radius:6px;
+				cursor:pointer;
+			}
+			input{
+				//height:30px;
+				font-size:20px;
+				color:#333;
+				background-color:#ddd;
+				border-radius:6px;
+				border-color:# 222;
+				width:40%;
+			}
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+			  -webkit-appearance: none;
+			  margin: 0;
+			}
+			input[type=number] {
+			  -moz-appearance: textfield;
+			}
+		</style>
+		
+		<script>
+			function setari(){
+				var url = "";
+				url += "?s=" + encodeURIComponent(document.getElementById("s").value);
+				url += "&p=" + encodeURIComponent(document.getElementById("p").value);
+				fetch(url);
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<h1>
+				Alegere retea WiFi
+			</h1>
+		</center>
+		<center>
+			<input type='text' id='s' value='&SSID' placeholder="SSID"></input>
+			<br/>
+			<br/>
+			<input type='password' id='p' value='&PASS' placeholder="PAROLA"></input>
+			<br/>
+			<br/>
+			<div class='bt' onclick='setari()'>
+				Salvare
+			</div>
+			<br/>
+			<br/>
+			<a href='/'>
+				<div class='back'>
+					Înapoi
+				</div>
+			</a>
+			<br/>
+			<br/>
+			<h2>
+				Adresa IP: &IP
+			</h2>
+		</center>
+	</body>
+</html>
