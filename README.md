@@ -1,4 +1,4 @@
-                                                      # Sistem de casă inteligent 
+  # Sistem de casă inteligent 
 
   # Pașii de compilare ai aplicației:
   
