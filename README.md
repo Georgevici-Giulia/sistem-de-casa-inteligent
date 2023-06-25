@@ -51,5 +51,11 @@ Așteaptă ca rezultatele să se încarce, apoi găsește opțiunea "esp32" de l
 10. După finalizarea instalării, poți utiliza opțiunea "ESP32 Sketch Data Upload" pentru a încărca fișierele sistemului de fișiere pe placa ESP32.
 11. Pentru adăugarea plăcii esp32 selectează "Instrumente" din bara de meniu și selectează "Placă" și adaugă "Wemos D1 Mini ESP32".
 
+# Pașii de instalare a biblioteciilor în Arduino IDE:
+
+1. Deschideți Arduino IDE, și accesați meniul Sketch și apoi Include Library.
+2. Apare o listă cu biblioteci disponibile. Cautati bibliotecile "WiFi.h","Adafruit_BME280.h", "Wire.h", "ESP32Servo.h", "MQUnifiedsensor.h" pe rand.
+3. Când găsiți biblioteca dorită, faceți clic pe numele acesteia pentru a deschide fereastra de instalare.    
+
       
 
