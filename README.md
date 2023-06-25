@@ -1,1 +1,4 @@
-# sistem-de-casa-inteligent
+# Sistem de casă inteligent
+# Descriere generală 
+# Medii de programare
+Arduino Uno , Notepad++
